@@ -6,9 +6,9 @@ app = Flask(__name__)
 repo = UsuarioRepository()
 
 @app.route('/')
-def index():
+def home():
     print('Carrega index.html')
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/listar')
 def listar_usuarios():
