@@ -16,3 +16,7 @@ class UsuarioRepository:
     def listar_usuarios(self):
         self.c.execute("SELECT * FROM usuarios")
         return self.c.fetchall()
+    
+    def buscar_usuario_por_username(self, username):
+        self.c.execute("SELECT * FROM usuarios WHERE nome=?", (username,))
+        return self.c.fetchone()

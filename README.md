@@ -34,7 +34,7 @@ pip3 install -r requirements.txt
 ## 3. É preciso configurar as variáveis de ambiente da aplicação
 
 ```bash
-export FLASK_APP=app.py && export FLASK_ENV=development
+export FLASK_APP=run.py && export FLASK_ENV=development
 ```
 
 ## 4. Para executar a aplicação principal
