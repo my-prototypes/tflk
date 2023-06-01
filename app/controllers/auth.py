@@ -7,7 +7,6 @@ auth_bp = Blueprint('auth', __name__, template_folder='app/templates')
 
 def validar_credenciais(username, password):
     usuario = repo.buscar_usuario_por_username(username)
-
     #if usuario and usuario.senha == password:
     if usuario:
         return True
@@ -22,7 +21,6 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-
         if validar_credenciais(username, password):
             session['username'] = username
             return redirect('/dashboard')
@@ -35,10 +33,9 @@ def login():
 @auth_bp.route('/dashboard')
 def dashboard():
     # Verifique se o usuário está autenticado antes de acessar a página de dashboard
-    #if verificar_autenticacao():
-    if 1==1:
+    if verificar_autenticacao():
         # Lógica para a página de dashboard
-        return render_template('dashboard.html')
+        return render_template('auth/dashboard.html', usuario=session['username'])
     else:
         # Usuário não autenticado, redirecione para a página de login
         return redirect('/login')

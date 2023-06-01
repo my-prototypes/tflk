@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template
 from app.controllers.usuarios import usuarios_bp
 from app.controllers.auth import auth_bp
 
