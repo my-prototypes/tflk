@@ -16,8 +16,8 @@
             <tbody>
                 {% for imagem in imagens %}
                     <tr>
-                        <td>{{ imagem.nome_arquivo }}</td>
-                        <td><img src="{{ url_for('static', filename='upload/' + imagem.nome_arquivo) }}" width="100" height="100"></td>
+                        <td>{{ imagem[0] }}</td>
+                        <td><img src="{{ url_for('static', filename='upload/' + imagem[0]) }}" width="100" height="100"></td>
                     </tr>
                 {% endfor %}
             </tbody>

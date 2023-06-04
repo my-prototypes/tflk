@@ -4,11 +4,13 @@ import os
 from app.repository import ImagemRepository
 from app.models import Imagem
 from flask import session
+from flask import send_from_directory
 
 # Create a Blueprint object for the upload blueprint
 imagens_bp = Blueprint('imagens', __name__, template_folder='app/templates')
 
-UPLOAD_FOLDER = 'upload'
+MAIN_PATH = os.path.abspath(os.getcwd())
+UPLOAD_FOLDER = MAIN_PATH + '/app/static/upload'
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'gif'}
 
 def allowed_file(filename):
@@ -59,3 +61,7 @@ def listar_imagens():
 
     # Renderize o template com a lista de imagens
     return render_template('imagem/listagem.html', imagens=imagens)
+
+@imagens_bp.route('/uploads/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(UPLOAD_FOLDER, filename)
