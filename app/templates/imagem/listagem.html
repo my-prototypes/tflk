@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listagem de Imagens</title>
+</head>
+<body>
+    <h1>Listagem de Imagens</h1>
+    {% if imagens %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Imagem</th>
+                    <th>Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for imagem in imagens %}
+                    <tr>
+                        <td>{{ imagem.nome_arquivo }}</td>
+                        <td><img src="{{ url_for('static', filename='upload/' + imagem.nome_arquivo) }}" width="100" height="100"></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>Nenhuma imagem cadastrada.</p>
+    {% endif %}
+</body>
+</html>
