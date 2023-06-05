@@ -99,7 +99,7 @@ Arquitetura de Alto Nível
 
 ![](docs/architecturec4.png)
 
-Componentes da Aplicação
+Componentes da Aplicação (Web Application)
 
 ```
 @startuml
