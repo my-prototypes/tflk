@@ -93,26 +93,6 @@ Gerencia as requisições HTTP, processa a lógica de negócios e direciona as a
 
 Responsável pela manipulações de dados entre a aplicação e o banco de dados. Implementada nos módulos repository.py localizado na pasta app. Os repositórios fornecem funcionalidades como cadastro de usuários, listagem de usuários, etc. Os repositórios interagem diretamente com o banco de dados SQLite através do módulo sqlite3.
 
-## Fluxo de dados de referência
-
-O fluxo de dados na aplicação segue o seguinte padrão:
-
-O cliente (navegador) faz uma requisição HTTP para uma determinada URL, como /login, /cadastrar, /listar, etc.
-
-O Flask, como framework, recebe a requisição e identifica o controlador correspondente com base na rota definida nas rotas registradas.
-
-O controlador processa a requisição, extrai os dados necessários dos parâmetros da requisição ou do formulário enviado pelo cliente.
-
-O controlador invoca o serviço apropriado, passando os dados relevantes.
-
-O serviço realiza as operações necessárias, como cadastro de usuário, autenticação ou consulta ao banco de dados.
-
-O serviço retorna os resultados para o controlador.
-
-O controlador renderiza o template HTML apropriado, passando os dados resultantes para serem exibidos ao cliente.
-
-O Flask envia a resposta HTTP contendo o HTML renderizado de volta para o cliente, que exibe a página ao usuário.
-
 ## Diagrama de Componentes
 
 Arquitetura de Alto Nível
@@ -149,6 +129,26 @@ Neste diagrama, temos os seguintes componentes mais importantes:
 **Repositories**: Estes componentes são responsáveis pelo acesso e manipulação dos dados persistentes. Os Repositories fornecem uma interface para buscar, criar, atualizar e excluir registros no banco de dados. Eles são utilizados pelos Controllers para realizar operações de persistência.
 
 Essa arquitetura pode ser divida em camadas, seguindo os conceitos do MVC, o que ajuda a separar as responsabilidades da aplicação, tornando o código mais modular, reutilizável e facilitando a manutenção. Os Controllers lidam com a lógica de controle, os Templates cuidam da apresentação e os Models encapsulam as entidades base da aplicação e interagem com os Repositories para acessar os dados persistentes.
+
+## Fluxo de dados de referência
+
+O fluxo de dados na aplicação segue o seguinte padrão:
+
+O cliente (navegador) faz uma requisição HTTP para uma determinada URL, como /login, /cadastrar, /listar, etc.
+
+O Flask, como framework, recebe a requisição e identifica o controlador correspondente com base na rota definida nas rotas registradas.
+
+O controlador processa a requisição, extrai os dados necessários dos parâmetros da requisição ou do formulário enviado pelo cliente.
+
+O controlador invoca o serviço apropriado, passando os dados relevantes.
+
+O serviço realiza as operações necessárias, como cadastro de usuário, autenticação ou consulta ao banco de dados.
+
+O serviço retorna os resultados para o controlador.
+
+O controlador renderiza o template HTML apropriado, passando os dados resultantes para serem exibidos ao cliente.
+
+O Flask envia a resposta HTTP contendo o HTML renderizado de volta para o cliente, que exibe a página ao usuário.
 
 # E. Tecnologias e configurações do projeto
 
