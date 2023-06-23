@@ -182,3 +182,49 @@ Autenticação e Autorização: A aplicação implementa um sistema de autentica
 **Configurações de Ambiente**: Considere utilizar configurações de ambiente para separar as configurações específicas de cada ambiente, como desenvolvimento, produção e teste. Isso permite que a aplicação seja facilmente configurada em diferentes ambientes sem a necessidade de modificar o código fonte.
 
 **Controle de Acesso**: Além da [autenticação](https://en.wikipedia.org/wiki/Authentication), é importante considerar o [controle de acesso](https://en.wikipedia.org/wiki/Authorization) em nível de permissões de usuário. Isso pode envolver a definição de papéis de usuário (por exemplo, administrador, usuário comum) e a restrição de acesso a determinadas funcionalidades ou recursos com base nas permissões associadas a cada papel.
+
+# F. Testes da Aplicação
+
+Existem vários tipos de testes de software que podem ser aplicados durante o processo de desenvolvimento para garantir a qualidade do software. Logo abaixo seguem os tipos de testes que deverão ser feitos para garantir a qualidade da nossa aplicação. 
+
+## Testes Unitários
+
+É realizado para verificar se as unidades individuais de código (geralmente funções, métodos ou classes) funcionam corretamente. O objetivo é testar cada unidade isoladamente para identificar possíveis erros lógicos ou funcionais. Geralmente, é executado pelos desenvolvedores.
+
+[Casos de Testes Unitários](https://github.com/my-prototypes/tflk/blob/main/docs/testes.md)
+
+## Testes de Integração
+
+Tem como objetivo verificar se as diferentes unidades do software se integram corretamente e funcionam em conjunto. Verifica se a comunicação entre as unidades é eficiente e se os dados são transferidos corretamente. Pode ser realizado em diferentes níveis de integração, como integração de módulos, integração de subsistemas ou integração do sistema como um todo.
+
+[Casos de Testes de Integração](https://github.com/my-prototypes/tflk/blob/main/docs/testes.md)
+
+## Testes de Sistema
+
+É realizado para avaliar o sistema como um todo e verificar se ele atende aos requisitos especificados. Verifica se todas as funcionalidades estão implementadas corretamente, se a interação entre os componentes é adequada e se o sistema funciona conforme o esperado em diferentes cenários e condições.
+
+[Casos de Testes de Sistema](https://github.com/my-prototypes/tflk/blob/main/docs/testes.md)
+
+## Testes de Aceitação
+
+É conduzido para verificar se o software atende aos critérios de aceitação definidos pelo cliente ou usuário final. Geralmente, é realizado em um ambiente próximo ao ambiente de produção. O objetivo é validar se o software está pronto para ser entregue e utilizado pelos usuários finais.
+
+[Roteiro para criar os testes de aceitação](https://github.com/my-prototypes/tflk/blob/main/docs/roteiro_testes_aceitacao.md)
+
+## Testes de Regressão
+
+É realizado após modificações no software para garantir que as alterações não tenham introduzido novos defeitos ou afetado o funcionamento das funcionalidades existentes. Visa garantir que as partes do software que estavam funcionando corretamente antes das alterações ainda funcionem conforme o esperado.
+
+[Roteiro para criar os testes de Regressão](https://github.com/my-prototypes/tflk/blob/main/docs/roteiro_testes_regressao.md)
+
+## Testes de Desempenho
+
+Tem como objetivo avaliar o desempenho do software em termos de tempo de resposta, capacidade de processamento, escalabilidade e estabilidade sob diferentes cargas de trabalho. Ajuda a identificar gargalos, otimizar o desempenho e garantir que o software possa lidar com a demanda esperada.
+
+[Roteiro para criar os testes de Desempenho](https://github.com/my-prototypes/tflk/blob/main/docs/roteiro_testes_desempenho.md)
+
+## Testes de Segurança
+
+É realizado para identificar vulnerabilidades de segurança no software. Visa garantir que o software seja resistente a ataques e que as informações sejam protegidas adequadamente. Envolve testes de penetração, testes de autenticação, testes de autorização e outros métodos de avaliação de segurança.
+
+[Roteiro para criar os testes de segurança](https://github.com/my-prototypes/tflk/blob/main/docs/roteiro_testes_seguranca.md)
