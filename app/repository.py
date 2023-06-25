@@ -1,8 +1,8 @@
 import sqlite3
 
 class UsuarioRepository:
-    def __init__(self):
-        self.conn = sqlite3.connect('usuarios.db', check_same_thread=False)
+    def __init__(self, db='usuarios.db'):
+        self.conn = sqlite3.connect(db, check_same_thread=False)
         self.c = self.conn.cursor()
         self.c.execute('''CREATE TABLE IF NOT EXISTS usuarios
                           (nome text, email text, senha text)''')

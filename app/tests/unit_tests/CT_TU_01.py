@@ -3,12 +3,12 @@ from app.models import Usuario
 from app.repository import UsuarioRepository
 
 class TestUsuarioRepositoryMethods(unittest.TestCase):
-    def setUp(self):
-        self.usuario_repository: UsuarioRepository = UsuarioRepository()
+    def setUp(self, usuario_repository=UsuarioRepository()):
+        self.usuario_repository: UsuarioRepository = usuario_repository
         self.usuario_repository.c.execute("DELETE FROM usuarios")
         self.usuario_repository.conn.commit()
     
-    def test_verificar_se_tabela_usuarios_existe(self):
+    def test_verificar_se_tabela_existe(self):
         self.usuario_repository.c.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='usuarios'")
         self.assertTrue(self.usuario_repository.c.fetchone())
     
@@ -29,8 +29,3 @@ class TestUsuarioRepositoryMethods(unittest.TestCase):
         usuario = Usuario('teste', 'jose@gmail.com', '123')
         self.usuario_repository.cadastrar_usuario(usuario)
         self.assertEqual(self.usuario_repository.buscar_usuario_por_username('teste'), ('teste', 'jose@gmail.com', '123'))
-
-# Para executar os testes, execute o comando na raiz do projeto:
-# python -m unittest app.tests.unit_tests.CT-TU-01.TestUsuarioRepositoryMethods
-if __name__ == '__main__':
-    unittest.main()
