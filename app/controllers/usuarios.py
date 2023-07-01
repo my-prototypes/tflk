@@ -60,5 +60,9 @@ def update(id):
             flash(message, 'success')
             return redirect(url_for("dashboard.profile"))
 
+    resultado = repo.buscar_usuario_por_username(username=session['username'])
+    print(resultado)
+    usuario = Usuario(id=resultado[0], fullname=resultado[1], email=resultado[2], username=resultado[3], password=resultado[4])    
+
     return render_template("usuarios/imagem.html", usuario = session['username'], 
-            profilePic="", titulo="Update image", usuario_logado=session['username'])
+            profilePic="", titulo="Update image", usuario_logado=session['username'], nome=usuario.username)
