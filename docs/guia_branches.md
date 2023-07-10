@@ -2,7 +2,7 @@
 
 Segue exemplo de desenvolvimento paralelo de 6 funcionalidades (feature1, feature2, feature3, feature4, feature5 e feature6) construídas por 3 desenvolvedores (desenvolvedor1, desenvolvedor2 e desenvolvedor3). Cada desenvolvedor cria seu próprio ramo (dev1, dev2, dev3) e faz commits em cada ramo. O desenvolvedor1 implementa as funcionalidades 1 e 2, o desenvolvedor2 implementa as funcionalidades 3 e 4, e o desenvolvedor3 implementa as funcionalidades 5 e 6. O ramo principal estável é o main.
 
-Você pode criar este esquema de controle versão através de scripts Mermaid usando a sintax Gitgraph (https://mermaid.js.org/syntax/gitgraph.html) abaixo
+Você pode criar este esquema de controle versão através de scripts Mermaid (https://mermaid.js.org) usando a sintaxe Gitgraph (https://mermaid.js.org/syntax/gitgraph.html) abaixo
 
 ```
 gitGraph
