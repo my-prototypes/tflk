@@ -41,4 +41,4 @@ gitGraph
 
 O diagrama resultante é: 
 
-xxx
+![Esquema de branches!](https://raw.githubusercontent.com/my-prototypes/tflk/main/docs/branches_cenario1.png) "Branches: main, dev1, dev2 e dev3"
