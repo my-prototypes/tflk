@@ -1,0 +1,42 @@
+ID,Caso de Teste,Resultado
+CT-TU-01-c1,Verificar se a tabela de usuários é criada corretamente no banco de dados,Passou
+CT-TU-01-c2,Testar o método cadastrar_usuario para garantir que um usuário seja inserido corretamente no banco de dados,Passou
+CT-TU-01-c3,Testar o método listar_usuarios para verificar se a lista de usuários é retornada corretamente,Passou
+CT-TU-01-c4,Testar o método buscar_usuario_por_username para verificar se um usuário é encontrado corretamente com base no nome de usuário,Passou
+CT-TU-02-c1,Verificar se a tabela de imagens é criada corretamente no banco de dados,Passou
+CT-TU-02-c2,Testar o método cadastrar_imagem para garantir que uma imagem seja inserida corretamente no banco de dados,Passou
+CT-TU-02-c3,Testar o método listar_imagens para verificar se a lista de imagens é retornada corretamente,Passou
+CT-TU-03-c1,Testar se as credenciais de um usuário válido são validadas corretamente,Passou
+CT-TU-03-c2,Testar se as credenciais de um usuário inválido são rejeitadas corretamente,Passou
+CT-TU-04-c1,Testar se a função retorna True quando o usuário está autenticado,Passou
+CT-TU-04-c2,Testar se a função retorna False quando o usuário não está autenticado,Passou
+CT-TI-01-c1,Simule o envio de credenciais de usuário válidas e verifique se o usuário é redirecionado para a página de dashboard,Passou
+CT-TI-01-c2,Simule o envio de credenciais inválidas e verifique se o usuário recebe uma mensagem de erro,Passou
+CT-TI-02-c1,Simule o preenchimento do formulário de cadastro de usuários com dados válidos e verifique se o usuário é redirecionado para a página de listagem de usuários,Passou
+CT-TI-03-c1,Simule o envio de um arquivo de imagem válido e verifique se a imagem é salva corretamente no diretório de upload,Passou
+CT-TI-03-c2,Verifique se o usuário cadastrado é exibido corretamente na lista de usuários,Passou
+CT-TI-04-c1,Verifique se o acesso às páginas restritas - como a página de dashboard - é bloqueado para usuários não autenticados,Passou
+CT-TI-04-c2,Verifique se o acesso às páginas restritas é permitido apenas para usuários autenticados,Passou
+CT-TS-01-c1,Cenário de teste 1: Fluxo Principal - Login de usuário válido,Passou
+CT-TS-01-c2,Cenário de teste 2: Fluxo de Exceção - Login de usuário inválido,Passou
+CT-TS-01-c3,Cenário de teste 3: Fluxo Alternativo - Recuperação de senha,Passou
+CT-TS-02-c1,Cenário de teste: Fluxo Principal - Logout de usuário,Passou
+CT-TS-03-c1,Cenário de teste: Fluxo Principal - Registro de novo usuário,Passou
+CT-TS-03-c2,Cenário de teste: Usuário já existente - Nome de usuário duplicado,Passou
+CT-TS-03-c3,Cenário de teste: Usuário já existente - E-mail duplicado,Passou
+CT-TS-04-c1,Testar a renderização correta da página de dashboard,Passou
+CT-TS-04-c2,Testar a exibição correta do card de quantidade de imagens do usuário,Passou
+CT-TS-04-c3,Testar o redirecionamento correto ao clicar nas opções do menu de opções,Passou
+CT-TS-04-c4,Testar a atualização correta da quantidade de imagens do usuário,Passou
+CT-TS-05-c1,Estar a renderização correta da página de listagem de imagens,Passou
+CT-TS-05-c2,Testar a funcionalidade de exibir imagem selecionada,Passou
+CT-TS-05-c3,Testar a funcionalidade de deletar imagem selecionada,Passou
+CT-TS-05-c4,Testar o tratamento correto quando nenhuma imagem está cadastrada,Passou
+CT-TS-06-c1,Testar se a página de exibição de imagem é carregada corretamente,Passou
+CT-TS-06-c2,Testar o redimensionamento da imagem,Passou
+CT-TS-06-c3,Testar a navegação para outras imagens,Passou
+CT-TS-08-c1,Testar a exibição da lista de imagens do usuário,Passou
+CT-TS-08-c2,Testar o processo de exclusão de uma imagem,Passou
+CT-TS-08-c3,Testar o tratamento de erros durante a exclusão,Passou
+CT-TS-09-c1,Testar a funcionalidade de busca por nome de imagem,Passou
+CT-TS-09-c2,Testar o tratamento de busca sem resultados,Passou
