@@ -229,6 +229,10 @@ Tem como objetivo avaliar o desempenho do software em termos de tempo de respost
 
 [Roteiro para criar os testes de segurança](https://github.com/my-prototypes/tflk/blob/main/docs/roteiro_testes_seguranca.md)
 
+## Exemplo de resultados de testes
+
+[Arquivo de resultados](https://github.com/my-prototypes/tflk/blob/main/docs/resultados_testes.csv)
+
 # G. Esquema de controle de branches
 
 Definir um esquema de controle de versão e criar branches de desenvolvimento é fundamental no desenvolvimento de software colaborativo usando o Git por várias razões:
