@@ -231,11 +231,11 @@ Tem como objetivo avaliar o desempenho do software em termos de tempo de respost
 
 [Roteiro para criar os testes de segurança](https://github.com/my-prototypes/tflk/blob/main/docs/roteiro_testes_seguranca.md)
 
-## Exemplo de Plano de Testes
+## Plano de Testes
 
 [Plano de Testes](https://github.com/my-prototypes/tflk/blob/main/docs/plano_de_testes.md)
 
-## Exemplo de resultados de testes
+## Resultados dos Testes
 
 [Protótipo 1 - resultados](https://github.com/my-prototypes/tflk/blob/main/docs/resultados_testes_prototipo1.csv)
 
