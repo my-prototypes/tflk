@@ -2,7 +2,7 @@
 
 ## Testes Unitários (CT-TU)
 
-### CT-TU-01Teste de unidade para a classe UsuarioRepository:
+### CT-TU-01Teste de unidade para a classe [UsuarioRepository](https://github.com/my-prototypes/tflk/blob/main/app/repository.py):
 CT-TU-01-c1 Verificar se a tabela de usuários é criada corretamente no banco de dados.
 
 CT-TU-01-c2 Testar o método cadastrar_usuario para garantir que um usuário seja inserido corretamente no banco de dados.
@@ -12,19 +12,19 @@ CT-TU-01-c3 Testar o método listar_usuarios para verificar se a lista de usuár
 CT-TU-01-c4 Testar o método buscar_usuario_por_username para verificar se um usuário é encontrado corretamente com base no nome de usuário.
 
 
-### CT-TU-02 Teste de unidade para a classe ImagemRepository:
+### CT-TU-02 Teste de unidade para a classe [ImagemRepository](https://github.com/my-prototypes/tflk/blob/main/app/repository.py):
 CT-TU-02-c1 Verificar se a tabela de imagens é criada corretamente no banco de dados.
 
 CT-TU-02-c2 Testar o método cadastrar_imagem para garantir que uma imagem seja inserida corretamente no banco de dados.
 
 CT-TU-02-c3 Testar o método listar_imagens para verificar se a lista de imagens é retornada corretamente.
 
-### CT-TU-03 Teste de unidade para a função validar_credenciais no módulo auth.py:
+### CT-TU-03 Teste de unidade para a função validar_credenciais no módulo [auth.py](https://github.com/my-prototypes/tflk/blob/main/app/controllers/auth.py):
 CT-TU-03-c1 Testar se as credenciais de um usuário válido são validadas corretamente.
 
 CT-TU-03-c2 Testar se as credenciais de um usuário inválido são rejeitadas corretamente.
 
-### CT-TU-04 Teste de unidade para a função verificar_autenticacao no módulo auth.py:
+### CT-TU-04 Teste de unidade para a função verificar_autenticacao no módulo [auth.py](https://github.com/my-prototypes/tflk/blob/main/app/controllers/auth.py):
 CT-TU-04-c1 Testar se a função retorna True quando o usuário está autenticado.
 
 CT-TU-04-c2 Testar se a função retorna False quando o usuário não está autenticado.
