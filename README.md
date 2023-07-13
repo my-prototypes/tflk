@@ -233,11 +233,12 @@ Tem como objetivo avaliar o desempenho do software em termos de tempo de respost
 
 ## Exemplo de Plano de Testes
 
-[Plano de Testes](TBD)
+[Plano de Testes](https://github.com/my-prototypes/tflk/blob/main/docs/plano_de_testes.md)
 
 ## Exemplo de resultados de testes
 
 [Protótipo 1 - resultados](https://github.com/my-prototypes/tflk/blob/main/docs/resultados_testes_prototipo1.csv)
+
 [Protótipo 2 - resultados](https://github.com/my-prototypes/tflk/blob/main/docs/resultados_testes.csv)
 
 # G. Esquema de controle de branches
