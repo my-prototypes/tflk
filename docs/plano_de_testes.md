@@ -13,3 +13,13 @@ Devem ser criados testes unitários e testes manuais do tipo de integração e t
 Devem ser criados testes unitários e testes manuais do tipo de integração e testes de sistema para validar as features F1 (Login de Usuário), F2 (Logout de Usuário), F3 (Registro de Novo Usuário), F4 (Dashboard de Usuário), F5 (Listar Imagens), F6 (Upload de Imagem), F7 (Deletar Imagem) e F8 (Buscar Imagem)
 
 [Casos de Testes que devem ser executados no protótipo 2 (versão 2)](https://github.com/my-prototypes/tflk/blob/main/docs/testes_prototipo2.csv)
+
+## Detalhamento dos Casos de Testes e Procedimentos dos Testes
+
+### Casos de Testes
+Especificação das entradas, resultados esperados, e um conjunto de condições de execução para um item de teste
+
+### Procedimentos de Teste
+Documentação especificando uma sequência de ações para a execução de um teste
+
+https://github.com/my-prototypes/tflk/blob/main/docs/testes.md
