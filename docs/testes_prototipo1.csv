@@ -1,0 +1,24 @@
+ID,Caso de Teste,Tipo de Teste,Protótipo
+CT-TU-01-c1,Verificar se a tabela de usuários é criada corretamente no banco de dados,Unitário,P1
+CT-TU-01-c2,Testar o método cadastrar_usuario para garantir que um usuário seja inserido corretamente no banco de dados,Unitário,P1
+CT-TU-01-c3,Testar o método listar_usuarios para verificar se a lista de usuários é retornada corretamente,Unitário,P1
+CT-TU-01-c4,Testar o método buscar_usuario_por_username para verificar se um usuário é encontrado corretamente com base no nome de usuário,Unitário,P1
+CT-TU-03-c1,Testar se as credenciais de um usuário válido são validadas corretamente,Unitário,P1
+CT-TU-03-c2,Testar se as credenciais de um usuário inválido são rejeitadas corretamente,Unitário,P1
+CT-TU-04-c1,Testar se a função retorna True quando o usuário está autenticado,Unitário,P1
+CT-TU-04-c2,Testar se a função retorna False quando o usuário não está autenticado,Unitário,P1
+CT-TI-01-c1,Simule o envio de credenciais de usuário válidas e verifique se o usuário é redirecionado para a página de dashboard,Integração,P1
+CT-TI-01-c2,Simule o envio de credenciais inválidas e verifique se o usuário recebe uma mensagem de erro,Integração,P1
+CT-TI-02-c1,Simule o preenchimento do formulário de cadastro de usuários com dados válidos e verifique se o usuário é redirecionado para a página de listagem de usuários,Integração,P1
+CT-TI-03-c2,Verifique se o usuário cadastrado é exibido corretamente na lista de usuários,Integração,P1
+CT-TI-04-c1,Verifique se o acesso às páginas restritas - como a página de dashboard - é bloqueado para usuários não autenticados,Integração,P1
+CT-TI-04-c2,Verifique se o acesso às páginas restritas é permitido apenas para usuários autenticados,Integração,P1
+CT-TS-01-c1,Cenário de teste 1: Fluxo Principal - Login de usuário válido,Sistema,P1
+CT-TS-01-c2,Cenário de teste 2: Fluxo de Exceção - Login de usuário inválido,Sistema,P1
+CT-TS-01-c3,Cenário de teste 3: Fluxo Alternativo - Recuperação de senha,Sistema,P1
+CT-TS-02-c1,Cenário de teste: Fluxo Principal - Logout de usuário,Sistema,P1
+CT-TS-03-c1,Cenário de teste: Fluxo Principal - Registro de novo usuário,Sistema,P1
+CT-TS-03-c2,Cenário de teste: Usuário já existente - Nome de usuário duplicado,Sistema,P1
+CT-TS-03-c3,Cenário de teste: Usuário já existente - E-mail duplicado,Sistema,P1
+CT-TS-04-c1,Testar a renderização correta da página de dashboard,Sistema,P1
+CT-TS-04-c3,Testar o redirecionamento correto ao clicar nas opções do menu de opções,Sistema,P1
