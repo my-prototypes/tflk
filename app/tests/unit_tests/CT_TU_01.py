@@ -3,8 +3,8 @@ from app.models import Usuario
 from app.repository import UsuarioRepository
 
 class TestUsuarioRepositoryMethods(unittest.TestCase):
-    def setUp(self, usuario_repository=UsuarioRepository()):
-        self.usuario_repository: UsuarioRepository = usuario_repository
+    def setUp(self):
+        self.usuario_repository = UsuarioRepository(db='usuarios_test.db')
         self.usuario_repository.c.execute("DELETE FROM usuarios")
         self.usuario_repository.conn.commit()
     
@@ -17,6 +17,13 @@ class TestUsuarioRepositoryMethods(unittest.TestCase):
         self.usuario_repository.cadastrar_usuario(usuario)
         self.usuario_repository.c.execute("SELECT * FROM usuarios WHERE nome=?", (usuario.nome,))
         self.assertEqual(self.usuario_repository.c.fetchone(), ('teste', 'jose@gmail.com', '123'))
+    
+    def test_cadastrar_usuario_duplicado(self):
+        usuario = Usuario('teste', 'jose@gmail.com', '123')
+        self.usuario_repository.cadastrar_usuario(usuario)
+        self.usuario_repository.cadastrar_usuario(usuario)
+        self.usuario_repository.c.execute("SELECT * FROM usuarios WHERE nome=?", (usuario.nome,))
+        self.assertEqual(self.usuario_repository.c.fetchall(), [('teste', 'jose@gmail.com', '123')])
 
     def test_listar_usuarios(self):
         usuario1 = Usuario('teste1', 'joao@gmail.com', '123')
