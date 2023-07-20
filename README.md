@@ -74,6 +74,8 @@ Segue uma breve descrição dos diretórios e arquivos:
 
 ![](docs/usecases.png)
 
+[Detalhamento](https://github.com/my-prototypes/tflk/blob/main/docs/Casos_de_Uso_MyImages.pdf)
+
 # D. Visão Geral da Arquitetura
 
 Esta seção apresenta uma visão geral da arquitetura de software da aplicação "MyImages". Descreve os principais componentes, camadas e fluxo de dados da aplicação, fornecendo uma compreensão geral da estrutura e organização do sistema.
