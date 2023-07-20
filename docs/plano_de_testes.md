@@ -17,9 +17,9 @@ Devem ser criados testes unitários e testes manuais do tipo de integração e t
 ## Detalhamento dos Casos de Testes e Procedimentos dos Testes
 
 ### Casos de Testes
-Especificação das entradas, resultados esperados, e um conjunto de condições de execução para um item de teste
+Especificação das entradas, passos, resultados esperados, e um conjunto de condições de execução para um item de teste.
 
 ### Procedimentos de Teste
-Documentação especificando uma sequência de ações para a execução de um teste
+Documentação especificando uma sequência de ações para a execução de um teste.
 
 https://github.com/my-prototypes/tflk/blob/main/docs/testes.md
