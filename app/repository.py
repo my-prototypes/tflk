@@ -9,6 +9,9 @@ class UsuarioRepository:
         self.conn.commit()
 
     def cadastrar_usuario(self, usuario):
+        self.c.execute("SELECT * FROM usuarios WHERE email=?", (usuario.email,))
+        if self.c.fetchone():
+            return False
         self.c.execute("INSERT INTO usuarios VALUES (?, ?, ?)",
                        (usuario.nome, usuario.email, usuario.senha))
         self.conn.commit()
