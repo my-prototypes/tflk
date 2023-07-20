@@ -1,8 +1,14 @@
 import sqlite3
+import os
+from dotenv import load_dotenv
 
 class UsuarioRepository:
     def __init__(self):
-        self.conn = sqlite3.connect('usuarios.db', check_same_thread=False)
+        load_dotenv()
+        if os.environ['FLASK_ENV'] == 'testing':
+            self.conn = sqlite3.connect('usuarios_test.db', check_same_thread=False)
+        else:
+            self.conn = sqlite3.connect('usuarios.db', check_same_thread=False)
         self.c = self.conn.cursor()
         self.c.execute('''CREATE TABLE IF NOT EXISTS usuarios
                           (nome text, email text, senha text)''')
