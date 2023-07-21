@@ -39,6 +39,9 @@ pip3 install -r requirements.txt
 ```bash
 export FLASK_APP=run.py && export FLASK_ENV=development
 ```
+```bash
+export MY_SECRET_KEY=?????????
+```
 
 ## 4. Para executar a aplicação principal
 
@@ -209,6 +212,8 @@ Tem como objetivo verificar se as diferentes unidades do software se integram co
 
 [Casos de Testes de Sistema](https://github.com/my-prototypes/tflk/blob/main/docs/testes.md)
 
+[Testes Automáticos de Sistema](https://github.com/my-prototypes/tflk/blob/desenvolvimento/docs/roteiro_selenium_web_driver.md)
+
 ### Testes de Aceitação
 
 É conduzido para verificar se o software atende aos critérios de aceitação definidos pelo cliente ou usuário final. Geralmente, é realizado em um ambiente próximo ao ambiente de produção. O objetivo é validar se o software está pronto para ser entregue e utilizado pelos usuários finais.
@@ -236,6 +241,24 @@ Tem como objetivo avaliar o desempenho do software em termos de tempo de respost
 ## Plano de Testes
 
 [Plano de Testes](https://github.com/my-prototypes/tflk/blob/main/docs/plano_de_testes.md)
+
+## Execução dos Testes 
+
+### Testes Unitários 
+
+No diretório principal da aplicação execute o comando abaixo:
+
+```bash
+python3 -m unittest app.tests.test_run
+```
+
+### Testes de Sistema automáticos
+
+No diretório principal da aplicação execute o comando abaixo:
+
+```bash
+python3 test_ts_run.py
+```
 
 ## Resultados dos Testes
 

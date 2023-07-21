@@ -1,11 +1,14 @@
 class Usuario:
-    def __init__(self, nome, email, senha):
-        self.nome = nome
+    def __init__(self,id, fullname, email, username, password):
+        self.id = id
+        self.nome = fullname
         self.email = email
-        self.senha = senha
+        self.username = username
+        self.password = password
 
 class Imagem:
-    def __init__(self, nome_arquivo, caminho_arquivo, usuario):
+    def __init__(self, id, nome_arquivo, caminho_arquivo, usuario):
+        self.id = id
         self.nome_arquivo = nome_arquivo
         self.caminho_arquivo = caminho_arquivo
         self.usuario = usuario
