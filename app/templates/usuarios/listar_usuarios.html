@@ -7,7 +7,7 @@
     <h1>Lista de Usuários</h1>
     <ul>
     {% for usuario in usuarios %}
-        <li>{{ usuario[0] }} - {{ usuario[1] }} - {{ usuario[2] }} - {{ usuario[3] }}</li>
+        <li>{{ usuario.id }} - {{ usuario.nome }} - {{ usuario.email }} - {{ usuario.username }}</li>
     {% endfor %}
     </ul>
 </body>

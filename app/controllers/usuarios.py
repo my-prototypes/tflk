@@ -5,14 +5,17 @@ from app.utils.utilidades import Constant
 from flask import flash
 from flask import url_for
 from flask import session
+from app.dao import UsuarioDAO
 
 # Create a Blueprint object for the users blueprint
 usuarios_bp = Blueprint('usuarios', __name__, template_folder='app/templates')
-repo = UsuarioRepository()
+
+repository = UsuarioRepository()
+usuario_dao = UsuarioDAO(repository)
 
 @usuarios_bp.route('/listar')
 def listar_usuarios():
-    usuarios = repo.listar_usuarios()
+    usuarios = usuario_dao.listar_usuarios()
     return render_template('usuarios/listar_usuarios.html', usuarios=usuarios)
 
 @usuarios_bp.route('/cadastrar', methods=['GET', 'POST'])
@@ -24,7 +27,7 @@ def cadastrar_usuario():
         username = request.form['username']
         password = request.form['password']
         usuario = Usuario(id, nome, email, username, password)
-        repo.cadastrar_usuario(usuario)
+        usuario_dao.cadastrar_usuario(usuario)
         return redirect('/listar')
     return render_template('usuarios/cadastrar_usuario.html')
 
@@ -41,10 +44,7 @@ def update(id):
         if error is not None:
             flash(error)
         else:
-            ##db = get_db()
-            ##db.execute("UPDATE user SET image = ? WHERE id = ?", (file_name_to_store, id))
             try:
-                # Processa o upload do arquivo de imagem
                 print('Processamento do upload da imagem')
                 # TO DO: isolar o tratamento de arquivo
                 file_image = request.files["image"]
@@ -60,9 +60,8 @@ def update(id):
             flash(message, 'success')
             return redirect(url_for("dashboard.profile"))
 
-    resultado = repo.buscar_usuario_por_username(username=session['username'])
-    print(resultado)
-    usuario = Usuario(id=resultado[0], fullname=resultado[1], email=resultado[2], username=resultado[3], password=resultado[4])    
+    resultado = usuario_dao.buscar_usuario_por_username(username=session['username'])
+    usuario = resultado
 
     return render_template("usuarios/imagem.html", usuario = session['username'], 
             profilePic="", titulo="Update image", usuario_logado=session['username'], nome=usuario.username)
