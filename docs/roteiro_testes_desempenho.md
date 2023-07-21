@@ -19,3 +19,5 @@ Para realizar os Testes de Desempenho nesta aplicação, considere os seguintes 
 É importante ressaltar que os Testes de Desempenho devem ser realizados em um ambiente controlado, separado do ambiente de produção, para evitar impactos negativos na experiência dos usuários. Além disso, os testes devem ser escalonados gradualmente, aumentando a carga progressivamente, para avaliar como a aplicação se comporta em diferentes níveis de demanda.
 
 Os Testes de Desempenho ajudarão a garantir que sua aplicação web Flask possa lidar eficientemente com um grande número de usuários e solicitações, proporcionando uma experiência de uso adequada e satisfatória.
+
+[Testes com o JMeter](https://github.com/my-prototypes/tflk/blob/desenvolvimento/docs/roteiro_jmeter.md)
