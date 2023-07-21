@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from app.models import Usuario
 from app.repository import UsuarioRepository
+from app.dao import UsuarioDAO
 
 class TestLoginFeature(unittest.TestCase):
         URL_LOGIN = "http://localhost:5000/login"
@@ -14,15 +15,15 @@ class TestLoginFeature(unittest.TestCase):
             self.username_input = self.driver.find_element(By.NAME, "username")
             self.password_input = self.driver.find_element(By.NAME, "password")
             self.login_button = self.driver.find_element(By.NAME, "btn_singin")
-            self.usuario_repository = UsuarioRepository(db='usuarios_test.db')
+            self.usuario_dao = UsuarioDAO(UsuarioRepository(db='usuarios_test.db'))
 
         def load_user_data(self):
-            self.usuario_repository.remover_usuarios()
-            self.usuario_repository.cadastrar_usuario(Usuario(id=None, fullname="Armando Soares Sousa", email="armando@gmail.com", username="armando", password="armando"))
+            self.usuario_dao.remover_usuarios()
+            self.usuario_dao.cadastrar_usuario(Usuario(id=None, fullname="Armando Soares Sousa", email="armando@gmail.com", username="armando", password="armando"))
 
         def free_user_data(self):
-            self.usuario_repository.remover_usuarios()
-            self.usuario_repository.conn.close()
+            self.usuario_dao.remover_usuarios()
+            self.usuario_dao.fechar_conexao()
 
         def setUp(self):
             self.load_user_data()

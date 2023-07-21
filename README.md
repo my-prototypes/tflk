@@ -242,6 +242,24 @@ Tem como objetivo avaliar o desempenho do software em termos de tempo de respost
 
 [Plano de Testes](https://github.com/my-prototypes/tflk/blob/main/docs/plano_de_testes.md)
 
+## Execução dos Testes 
+
+### Testes Unitários 
+
+No diretório principal da aplicação execute o comando abaixo:
+
+```bash
+python3 -m unittest app.tests.test_run
+```
+
+### Testes de Sistema automáticos
+
+No diretório principal da aplicação execute o comando abaixo:
+
+```bash
+python3 test_ts_run.py
+```
+
 ## Resultados dos Testes
 
 [Protótipo 1 - resultados](https://github.com/my-prototypes/tflk/blob/main/docs/resultados_testes_prototipo1.csv)

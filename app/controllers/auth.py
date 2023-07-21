@@ -4,14 +4,16 @@ from app.models import Usuario
 from app.repository import UsuarioRepository
 from flask import url_for
 from flask import flash
+from app.dao import UsuarioDAO
 
 auth_bp = Blueprint('auth', __name__, template_folder='app/templates')
-repo = UsuarioRepository()
+repository = UsuarioRepository()
+usuario_dao = UsuarioDAO(repository)
 
 def validar_credenciais(username, password):
-    resposta_consulta = repo.buscar_usuario_por_username(username)
+    resposta_consulta = usuario_dao.buscar_usuario_por_username(username)
     if resposta_consulta is not None:
-        usuario = Usuario(resposta_consulta[0], resposta_consulta[1], resposta_consulta[2], resposta_consulta[3], resposta_consulta[4])
+        usuario = resposta_consulta
         if usuario and usuario.password == password:
             return True
         else: 
@@ -49,7 +51,7 @@ def register():
         email = request.form["email"]
         password = request.form["password"]
         error = None
-        resultado_busca = repo.buscar_usuario_por_username(username)
+        resultado_busca = usuario_dao.buscar_usuario_por_username(username)
 
         if not username:
             error = "Username is required."
@@ -61,7 +63,7 @@ def register():
         if error is None:
             # the name is available, store it in the database and go to the login page
             usuario = Usuario(id=1, fullname=name, email=email, username=username, password=password)
-            repo.cadastrar_usuario(usuario)
+            usuario_dao.cadastrar_usuario(usuario)
             return redirect(url_for("auth.login"))
 
         flash(error)
