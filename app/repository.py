@@ -23,6 +23,10 @@ class UsuarioRepository:
         self.c.execute("SELECT * FROM usuarios WHERE username=?", (username,))
         return self.c.fetchone()
 
+    def remover_usuarios(self):
+        self.c.execute("DELETE FROM usuarios")
+        self.conn.commit()
+
     # Outros métodos de manipulação de dados dos usuarios
 
 class ImagemRepository:
