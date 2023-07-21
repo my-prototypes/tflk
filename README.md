@@ -39,6 +39,9 @@ pip3 install -r requirements.txt
 ```bash
 export FLASK_APP=run.py && export FLASK_ENV=development
 ```
+```bash
+export MY_SECRET_KEY=?????????
+```
 
 ## 4. Para executar a aplicação principal
 

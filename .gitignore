@@ -16,9 +16,11 @@ build/
 .idea/
 docs/_build/
 .vscode
-
+*.log
 # Coverage reports
 htmlcov/
 .coverage
 .coverage.*
 *,cover
+mybox/
+*.db
