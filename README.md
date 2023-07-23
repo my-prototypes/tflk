@@ -2,6 +2,8 @@
 
 Exemplo de Protótipo de Aplicação Web (Prova de Conceito) de CRUD de usuários e imagens
 
+[Quadro de Atividades do Projeto](https://github.com/orgs/my-prototypes/projects/1)
+
 # A. Ambiente de Desenvolvimento
 
 Existe uma estrutura base que vamos seguir para a construção de nossas aplicações em [Flask](https://flask.palletsprojects.com/en/2.3.x/): 
