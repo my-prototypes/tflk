@@ -59,13 +59,17 @@ Segue uma breve descrição dos diretórios e arquivos:
 
 **app/**: O diretório raiz da sua aplicação.
 
-**controllers/**: O diretório que contém os controladores ou [blueprints](https://flask.palletsprojects.com/en/2.3.x/blueprints/) da sua aplicação. Os arquivos auth.py e usuarios.py definem as rotas e a lógica associada a cada uma delas.
+**app/tests**: diretório contendo a implementação dos casos de testes da aplicação
 
-**models.py**: O arquivo que contém as definições das classes de modelo da sua aplicação. A classe Usuario está definida neste arquivo.
+**app/controllers/**: diretório que contém os controladores ou [blueprints](https://flask.palletsprojects.com/en/2.3.x/blueprints/) da sua aplicação. Os arquivos auth.py e usuarios.py definem as rotas e a lógica associada a cada uma delas.
 
-**repository.py**: O arquivo que contém a definição da classe UsuarioRepository, responsável pela manipulação dos dados dos usuários.
+**app/static**: diretório que contem os arquivos e recursos estáticos da aplicação
 
-**templates/**: O diretório que contém os templates HTML usados para renderizar as páginas da sua aplicação. Os templates estão organizados em subdiretórios, como auth/ e usuarios/, correspondendo aos controladores aos quais eles pertencem.
+**app/templates/**: O diretório que contém os templates HTML usados para renderizar as páginas da sua aplicação. Os templates estão organizados em subdiretórios, como auth/ e usuarios/, correspondendo aos controladores aos quais eles pertencem.
+
+**app/models.py**: O arquivo que contém as definições das classes de modelo da sua aplicação. A classe Usuario está definida neste arquivo.
+
+**app/repository.py**: O arquivo que contém a definição da classe UsuarioRepository, responsável pela manipulação dos dados dos usuários.
 
 **README.md**: Um arquivo de documentação contendo informações sobre o projeto.
 
