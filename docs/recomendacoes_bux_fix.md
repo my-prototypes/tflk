@@ -1,3 +1,5 @@
+# Recomendações para um processo de bug-fix
+
 Logo abaixo seguem algumas recomendações para um processo básico de correção de bugs: 
 
 1. Identificação do bug: Os bugs podem ser relatados por usuários finais, testadores ou desenvolvedores durante o processo de desenvolvimento ou após a liberação do software. A primeira etapa é identificar o bug, o que pode ser feito por meio de relatórios de erro, registros de problemas ou solicitações de suporte.
@@ -21,3 +23,32 @@ Logo abaixo seguem algumas recomendações para um processo básico de correçã
 10. Liberação da nova versão: Se o bug foi corrigido em uma versão futura do software, a nova versão é preparada e lançada com a correção incluída.
 
 É importante notar que a gravidade e a prioridade do bug podem influenciar o cronograma e a abordagem de correção. Bugs críticos ou de alta prioridade podem exigir correção imediata, enquanto bugs de baixa prioridade podem ser programados para correção em futuras versões do software. O processo de bug-fix padrão é iterativo e contínuo, pois novos bugs podem ser identificados ao longo do ciclo de vida do software, e o processo é repetido para cada novo bug encontrado.
+
+## Segue exemplo de fluxo de correção de bugs:
+
+1. O processo inicia com o registro do defeito.
+
+2. Em seguida, o defeito é atribuído ao Desenvolvedor responsável para correção.
+
+3. O Desenvolvedor corrige o defeito e marca como concluído.
+
+4. O Testador verifica a correção e decide se o defeito foi corrigido corretamente ou não.
+
+- 4.1 Se o defeito estiver corrigido corretamente, ele é fechado e uma nova release é liberada.
+- 4.2 Se o defeito não estiver corrigido, ele é reaberto e o Desenvolvedor responsável deve corrigi-lo novamente.
+
+```
+@startuml
+title Diagrama de Status - Gestão de Defeitos
+[*] --> Registrar_Defeito
+Registrar_Defeito --> Corrigir_Defeito : Defeito Registrado
+Corrigir_Defeito --> Verificar_Correcao : Concluído
+Verificar_Correcao --> Defeito_Corrigido : "Defeito Corrigido Corretamente?"
+Verificar_Correcao --> Reabrir_Defeito : "Defeito não Corrigido"
+Defeito_Corrigido --> Fechar_Defeito : Sim
+Reabrir_Defeito --> Corrigir_Defeito : Não
+Fechar_Defeito --> Liberar_Nova_Release : Defeito Fechado
+@enduml
+```
+
+![Gestao de defeitos](https://raw.githubusercontent.com/my-prototypes/tflk/main/docs/gestao_defeitos.png)
