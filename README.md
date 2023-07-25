@@ -175,6 +175,8 @@ Aqui estão as principais tecnologias e frameworks utilizados na aplicação:
 
 **PlantUML**: [PlantUML](https://en.wikipedia.org/wiki/PlantUML) é uma ferramenta para criação de diagramas UML de forma textual. Foi utilizado para gerar os diagramas de componentes e camadas da aplicação.
 
+**AdminLTE**: [AdminLTE](https://adminlte.io) é um framework de interface do usuário (UI) e um tema de administração de código aberto amplamente utilizado para criar painéis e painéis de administração modernos, responsivos e atraentes.
+
 Essas são as principais tecnologias e frameworks utilizados na aplicação. Cada uma desempenha um papel importante na construção e funcionamento da aplicação web Flask, desde o framework Flask em si até as linguagens de marcação utilizadas para criar as páginas web.
 
 ## Configurações do projeto
