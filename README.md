@@ -69,7 +69,7 @@ Segue uma breve descrição dos diretórios e arquivos:
 
 **app/models.py**: O arquivo que contém as definições das classes de modelo da sua aplicação. A classe Usuario está definida neste arquivo.
 
-**app/repository.py**: O arquivo que contém a definição da classe UsuarioRepository, responsável pela manipulação dos dados dos usuários.
+**app/repository.py**: O arquivo que contém a definição da classe UsuarioRepository, responsável por acessar o banco de dadoe e permitir a manipulação dos dados dos usuários.
 
 **README.md**: Um arquivo de documentação contendo informações sobre o projeto.
 
