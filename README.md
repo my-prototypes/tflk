@@ -264,6 +264,8 @@ No diretório principal da aplicação execute o comando abaixo:
 python3 test_ts_run.py
 ```
 
+Obs: É preciso ter o Firefox instalado.
+
 ## Resultados dos Testes
 
 [Protótipo 1 - resultados](https://github.com/my-prototypes/tflk/blob/main/docs/resultados_testes_prototipo1.csv)
