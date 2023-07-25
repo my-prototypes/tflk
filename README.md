@@ -59,11 +59,11 @@ Segue uma breve descrição dos diretórios e arquivos:
 
 **app/**: O diretório raiz da sua aplicação.
 
-**app/tests**: diretório contendo a implementação dos casos de testes da aplicação
+**app/tests/**: diretório contendo a implementação dos casos de testes da aplicação
 
 **app/controllers/**: diretório que contém os controladores ou [blueprints](https://flask.palletsprojects.com/en/2.3.x/blueprints/) da sua aplicação. Os arquivos auth.py e usuarios.py definem as rotas e a lógica associada a cada uma delas.
 
-**app/static**: diretório que contem os arquivos e recursos estáticos da aplicação
+**app/static/**: diretório que contem os arquivos e recursos estáticos da aplicação
 
 **app/templates/**: O diretório que contém os templates HTML usados para renderizar as páginas da sua aplicação. Os templates estão organizados em subdiretórios, como auth/ e usuarios/, correspondendo aos controladores aos quais eles pertencem.
 
