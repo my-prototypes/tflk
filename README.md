@@ -53,6 +53,21 @@ flask run --host=0.0.0.0 --port=5000
 
 Abra o browser: http://localhost:5000
 
+## 5. Testando a aplicação no próprio browser:
+
+Pré-condição: você deve está logado na sua conta do GitHub
+
+Você pode testar a aplicação via [Codespaces](https://github.com/features/codespaces)
+
+1. Clique no botão "Code"
+2. Selecione a aba "Codespaces"
+3. Clique no botão "Create codespace on main"
+4. Deverá ser carregado o ambiente padrão do Visual Studio Code
+5. Siga os passos do "Ambiente de Desenvolvimento" para executar a aplicação
+6. O ambiente do Codespace vai pedir para você abrir uma nova janela do browser (pode ser necessário ativar permitir pop-ups do seu browser)
+7. Deverá aparecer a tela "Home Pública para Testes"
+8. Crie um novo usuário e faça os testes das features disponíveis no branch principal (main)  
+
 # B. Descrição da estrutura da aplicação 
 
 Segue uma breve descrição dos diretórios e arquivos:
