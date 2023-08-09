@@ -43,7 +43,7 @@ gitGraph
 
 O diagrama resultante é: 
 
-![Esquema de branches!](https://raw.githubusercontent.com/my-prototypes/tflk/main/docs/branches_cenario1.png) "Branches: main, dev1, dev2 e dev3"
+![Esquema de branches!](https://raw.githubusercontent.com/armandossrecife/myci/main/branches_cenario1.png) "Branches: main, dev1, dev2 e dev3"
 
 ## Devs integrando no branch de desenvolvimento
 
@@ -88,7 +88,7 @@ gitGraph
 
 O diagrama resultante é: 
 
-![Esquema de branches!](https://raw.githubusercontent.com/my-prototypes/tflk/main/docs/branch_desenvolvimento.png) "Branches: main, desenvolvimento, dev1, dev2 e dev3"
+![Esquema de branches!](https://raw.githubusercontent.com/armandossrecife/myci/main/branch_desenvolvimento.png) "Branches: main, desenvolvimento, dev1, dev2 e dev3"
 
 ### Descrição do fluxo de integração no branch de desenvolvimento
 
@@ -117,4 +117,3 @@ Por fim, o branch main é verificado e é feito um merge de desenvolvimento para
 Um novo commit ("Release 1.0.0") é feito no branch main, e uma tag "v1.0.0" é adicionada para marcar a versão da release contendo todas as features implementadas.
 
 O diagrama representa o fluxo de desenvolvimento com múltiplos branches (dev1, dev2 e dev3) de desenvolvedores que implementam suas respectivas funcionalidades, onde cada dev faz o merge com o branch de desenvolvimento, e por fim, o branch de desenvolvimento é mesclado no branch principal (main) para gerar uma release marcada com a tag "v1.0.0". 
-
