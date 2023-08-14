@@ -6,9 +6,9 @@ Logo abaixo seguem alguns dos principais conceitos envolvidos:
 
 **Aplicativo da Web**: Um aplicativo da Web é um aplicativo de software acessado por meio de um navegador da Web na Internet. Exemplos incluem sites de compras online, plataformas de mídia social e sistemas bancários online.
 
-**Conteinerização**: a conteinerização é uma tecnologia que permite empacotar um aplicativo e suas dependências (como bibliotecas, estruturas e tempo de execução) juntos em uma unidade independente chamada container. Os containers são isolados uns dos outros e do sistema host, garantindo que o aplicativo seja executado de forma consistente, independentemente do ambiente subjacente.
+**Conteinerização**: a conteinerização é uma tecnologia que permite empacotar um aplicativo e suas dependências (como bibliotecas, estruturas e tempo de execução) juntos em uma unidade independente chamada [container](https://www.docker.com/resources/what-container). Os containers são isolados uns dos outros e do sistema host, garantindo que o aplicativo seja executado de forma consistente, independentemente do ambiente subjacente.
 
-**Docker**: Docker é uma das plataformas de conteinerização mais populares. Ele fornece ferramentas e um ambiente de tempo de execução para criar, implantar e gerenciar containers. Os containers do Docker podem ser facilmente compartilhados e movidos entre diferentes sistemas.
+[**Docker**](https://www.docker.com/): [Docker](https://en.wikipedia.org/wiki/Docker_(software)) é uma das plataformas de conteinerização mais populares. Ele fornece ferramentas e um ambiente de tempo de execução para criar, implantar e gerenciar containers. Os containers do Docker podem ser facilmente compartilhados e movidos entre diferentes sistemas.
 
 **Isolamento**: os containers fornecem um alto grau de isolamento, o que significa que os recursos usados por um container são separados daqueles usados por outro. Isso evita conflitos entre aplicativos e aumenta a segurança.
 
