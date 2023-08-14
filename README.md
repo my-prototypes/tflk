@@ -323,6 +323,6 @@ O processo de bug-fix padrão, também conhecido como processo de correção de 
 
 A conteinerização de aplicativos da Web refere-se à prática de empacotar e executar um aplicativo da Web, juntamente com todas as suas dependências e definições de configuração, dentro de ambientes isolados chamados containers. Esses containers são padronizados, leves e portáteis, garantindo que o aplicativo seja executado de forma consistente em vários ambientes, desde o desenvolvimento até a produção.
 
-[Conceitos básicos de containerização](TBD)
+[Conceitos básicos de containerização](https://github.com/my-prototypes/tflk/blob/main/docs/Containerization.md)
 
 [Base do cluster MyImages](https://github.com/my-prototypes/cluster-myimages)
